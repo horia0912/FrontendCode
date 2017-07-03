@@ -25,7 +25,7 @@ hrApp.controller('EmployeeAddController', ['$scope', '$http', '$location', 'Comm
 
 
 
-        ManagerService.findManagers()
+        ManagerService.findManager()
             .then(function (res) {
                 $scope.managers = res.data;
 
